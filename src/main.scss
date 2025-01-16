@@ -1,0 +1,92 @@
+@use "./styles/app.scss";
+@use "./styles/variables.scss" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Host Grotesk", serif;
+  font-optical-sizing: auto;
+}
+
+html,
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: $white;
+  color: black;
+}
+
+button {
+  z-index: 1;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  z-index: 1;
+  transition: all 0.2s ease-in-out;
+
+  cursor: pointer;
+
+  &:hover {
+    color: $teal;
+  }
+}
+
+span {
+  font-weight: 700;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.secondTitle {
+  font-weight: 700;
+  font-size: 2rem;
+  color: #8dd0f1;
+}
+
+.description {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #c9eafa;
+}
+
+.txtDark {
+  color: $darkBlue;
+}
+
+.btn {
+  background-color: $richBlue;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  color: $white;
+  border: none;
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $darkBlue;
+  }
+}
+
+.sponsor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: $white;
+}
+
+.swiperSlide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+}
