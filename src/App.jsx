@@ -4,8 +4,6 @@ import { SlideDown } from "react-slidedown";
 import "react-slidedown/lib/slidedown.css";
 
 function App() {
-	const [paused, setPaused] = useState(false);
-
 	const [openSections, setOpenSections] = useState({
 		section1: false,
 		section2: false,
