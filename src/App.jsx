@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
+import SlideDown from "./components/SlideDown";
 import StarsEffect from "./components/StarsEffect.jsx";
-import { SlideDown } from "react-slidedown";
-import "react-slidedown/lib/slidedown.css";
 
 function App() {
 	const [openSections, setOpenSections] = useState({
@@ -196,56 +195,46 @@ function App() {
 
 						<div className="question" onClick={() => toggleSection("section1")}>
 							<p className="faqQuestion">What is UdeMHacks?</p>
-							<SlideDown>
-								{openSections.section1 && (
-									<div className="slidedown">
-										<p>UdeMHacks is an inclusive hackathon that aims to bring together emerging talents, experienced developers, and tech enthusiasts...</p>
-									</div>
-								)}
+							<SlideDown isOpen={openSections.section1}>
+								<div className="slidedown">
+									<p>UdeMHacks is an inclusive hackathon that aims to bring together emerging talents, experienced developers, and tech enthusiasts...</p>
+								</div>
 							</SlideDown>
 						</div>
 
 						<div className="question" onClick={() => toggleSection("section2")}>
 							<p className="faqQuestion">Who can participate?</p>
-							<SlideDown>
-								{openSections.section2 && (
-									<div className="slidedown">
-										<p>Whether you're a beginner or an expert, UdeMHacks is the perfect opportunity to learn, share ideas, and work in teams on real projects that could shape the future.</p>
-									</div>
-								)}
+							<SlideDown isOpen={openSections.section2}>
+								<div className="slidedown">
+									<p>Whether you're a beginner or an expert, UdeMHacks is the perfect opportunity to learn, share ideas, and work in teams on real projects that could shape the future.</p>
+								</div>
 							</SlideDown>
 						</div>
 
 						<div className="question" onClick={() => toggleSection("section3")}>
 							<p className="faqQuestion">When is UdeMHacks?</p>
-							<SlideDown>
-								{openSections.section3 && (
-									<div className="slidedown">
-										<p>UdeMHacks will take place from March 1st to March 3rd, 2025. Don't miss out on this exciting event!</p>
-									</div>
-								)}
+							<SlideDown isOpen={openSections.section3}>
+								<div className="slidedown">
+									<p>UdeMHacks will take place from March 1st to March 3rd, 2025. Don't miss out on this exciting event!</p>
+								</div>
 							</SlideDown>
 						</div>
 
 						<div className="question" onClick={() => toggleSection("section4")}>
 							<p className="faqQuestion">How can I become a sponsor?</p>
-							<SlideDown>
-								{openSections.section4 && (
-									<div className="slidedown">
-										<p>Become a sponsor today and help empower the next generation of innovators.</p>
-									</div>
-								)}
+							<SlideDown isOpen={openSections.section4}>
+								<div className="slidedown">
+									<p>Become a sponsor today and help empower the next generation of innovators.</p>
+								</div>
 							</SlideDown>
 						</div>
 
 						<div className="question" onClick={() => toggleSection("section5")}>
 							<p className="faqQuestion">How can I join the team?</p>
-							<SlideDown>
-								{openSections.section5 && (
-									<div className="slidedown">
-										<p>Join our team today and become a part of the next generation of innovators.</p>
-									</div>
-								)}
+							<SlideDown isOpen={openSections.section5}>
+								<div className="slidedown">
+									<p>Join our team today and become a part of the next generation of innovators.</p>
+								</div>
 							</SlideDown>
 						</div>
 					</div>
